@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mary Grace Degamo</title>
+    <style>
+        body {
+            font-family: 'armata', sans-serif;
+            background-color: #E6F5E3;
+            color: #5A7356;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #A7D89D;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+        }
+
+        .header div {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #5A7356;
+            margin: 0;
+        }
+
+        .contact-info {
+            margin-top: 5px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .contact-info div i {
+            font-size: 18px;
+            color: #5A7356;
+            margin-right: 8px;
+        }
+
+        .contact-info a {
+            color: #A7D89D;
+            text-decoration: underline;
+        }
+
+        .contact-info span {
+            color: #333;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #5A7356;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #5A7356;
+        }
+
+        .section {
+            padding: 20px 0;
+            border-bottom: 2px solid #A7D89D;
+        }
+
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li, .projects ul li {
+            margin-bottom: 8px;
+        }
+
+        .skills ul li::before, .projects ul li::before {
+            content: "•";
+            color: #666;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header img {
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="greys.png" alt="Profile Picture">
+            <div>
+                <h1>Mary Grace Degamo</h1>
+                <!-- Contact Info  -->
+                <div class="contact-info">
+                    <div>
+                        <i>&#9993;</i>
+                        <a class="email">marygracedegamo@gmail.com</a>
+                    </div>
+                    <div>
+                        <i>&#9742;</i>
+                        <span>09620834341</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Information Technology</strong></p>
+            <p>Cordova Public College, Expected Graduation: 2026</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: C, C++, Java</li>
+                <li>Web Development: HTML, CSS, Bootstrap</li>
+                <li>Communication & Problem-Solving</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website:</strong> Created a personal portfolio showcasing responsive design using Bootstrap.</li>
+                <li><strong>Bingo Game:</strong> Developed a bingo game project for data structures.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

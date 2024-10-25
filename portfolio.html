@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>IAS-DEGAMO</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="hamburger" onclick="toggleNavbar()">&#9776;</div>
+        <ul id="navbarLinks" class="navbar-links">
+            <li><a href="portfolio.html" class="highlight">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="dropdown">
+                <a onclick="toggleDropdown()">Projects <i class="fa fa-caret-down dropdown-icon"></i></a>
+                <div class="dropdown-content">
+                    <a href="volnteer.html">Project 1</a>
+                    <a href="reset.html">Project 2</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="left-side">
+            <div class="vl"></div>
+        </div>
+        <div id="aboutme">
+            <img src="grace.png" alt="Circular picture of Grace">
+            <div class="border"></div>
+            <p>hi i'm <span>MARY GRACE DEGAMO</span> <br> 
+            a <span>3rd-year BSIT</span> student from <br>section <span>3D</span></p>
+        </div>
+        <div id="right-side">
+            <div class="text">
+                <p>1ST YEAR</p>
+                <li>INTRO TO COMPUTING</li>
+                <p>2ND YEAR</p>
+                <li>PLATFORM TECH</li>
+                <p>3RD YEAR</p>
+                <li>HCI</li>
+                <div id="contact-info">
+                    <span class="email"> <i class="fa-solid fa-paper-plane"></i> marygracedegamo9704@gmail.com </span>
+                    <span class="phone"> <i class="fa-solid fa-square-phone-flip"></i> +63 962 083 4341 </span>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDropdown() {
+        document.querySelector('.dropdown').classList.toggle('active');
+    }
+    </script>
+</body>
+</html>
